@@ -1,0 +1,70 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #f8f6f3;
+  color: #3e3e3e;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #f3f0ec;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #6e6355;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #6e6355;
+  font-weight: 500;
+}
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: url('assets/hero.jpg') center/cover no-repeat;
+  color: #fff;
+}
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  background-color: #6e6355;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.planes {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.plan-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.plan {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.plan.destacado {
+  border: 2px solid #6e6355;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f3f0ec;
+  font-size: 0.9rem;
+  color: #6e6355;
+}
