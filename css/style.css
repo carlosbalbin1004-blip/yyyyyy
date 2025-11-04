@@ -1,70 +1,27 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  background-color: #f8f6f3;
-  color: #3e3e3e;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap');
+:root{
+  --ink:#060606; --navy:#0b3b66; --ivory:#FAF6F0; --gold:#C9A36B; --muted:#8A8F98;
+  --maxw:1200px;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 3rem;
-  background-color: #f3f0ec;
-}
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: #6e6355;
-}
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #6e6355;
-  font-weight: 500;
-}
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background: url('assets/hero.jpg') center/cover no-repeat;
-  color: #fff;
-}
-.hero h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-}
-.btn {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  margin-top: 1rem;
-  background-color: #6e6355;
-  color: white;
-  text-decoration: none;
-  border-radius: 3px;
-}
-.planes {
-  text-align: center;
-  padding: 4rem 2rem;
-}
-.plan-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-.plan {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 250px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.plan.destacado {
-  border: 2px solid #6e6355;
-}
-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #f3f0ec;
-  font-size: 0.9rem;
-  color: #6e6355;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Montserrat,system-ui,Arial;background:var(--ivory);color:#222;line-height:1.5}
+.container{max-width:var(--maxw);margin:0 auto;padding:24px}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;background:rgba(255,255,255,0.4);backdrop-filter:blur(4px);position:sticky;top:0;z-index:50}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo .mark{width:48px;height:48px;background:var(--ink);color:white;display:flex;align-items:center;justify-content:center;border-radius:8px;font-weight:600}
+nav a{margin-left:18px;text-decoration:none;color:var(--ink);font-weight:500}
+.hero{display:flex;align-items:center;gap:32px;padding:60px 24px;background-image:url('assets/hero.jpg');background-size:cover;background-position:center;color:white}
+.hero .copy{max-width:560px;background:rgba(0,0,0,0.25);padding:28px;border-radius:8px}
+.hero h1{font-family:'Playfair Display',serif;font-size:42px;margin:0}
+.hero p{margin:12px 0;color:#f3f3f3}
+.cta{margin-top:18px;display:flex;gap:12px}
+.btn{padding:10px 16px;border-radius:8px;border:1px solid var(--gold);background:transparent;color:var(--ink);text-decoration:none}
+.btn.primary{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.section{padding:48px 24px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border-radius:10px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+.footer{background:#f3f0ec;padding:28px;text-align:center;color:var(--muted)}
+@media(max-width:900px){.hero{flex-direction:column;padding:40px 12px}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}nav a{margin-left:8px}}

@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SKIINBOX — Moda con propósito</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SKIINBOX — Inicio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1 class="logo">SKIINBOX</h1>
+  <header class="container">
+    <a class="logo" href="index.html"><span class="mark"></span><div class="mark" style="display:none"></div><div style="display:flex;flex-direction:column"><strong style="font-family:'Playfair Display',serif;color:#2f2f2f">SKIINBOX</strong><small style="color:var(--muted)">Moda por suscripción · Perú</small></div></a>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="vision.html">Visión</a>
@@ -18,36 +18,51 @@
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
-
-  <section class="hero">
-    <h2>Lujo consciente, elegancia personalizada</h2>
-    <p>Inspirado en la filosofía de la belleza humana y el arte del vestir.</p>
-    <a href="colecciones.html" class="btn">Ver colecciones</a>
-  </section>
-
-  <section class="planes">
-    <h2>Planes de Suscripción</h2>
-    <div class="plan-container">
-      <div class="plan">
-        <h3>Básico</h3>
-        <p>$5 / mes</p>
-        <p>Descubre tu estilo con prendas esenciales.</p>
-      </div>
-      <div class="plan destacado">
-        <h3>Estándar</h3>
-        <p>$20 / mes</p>
-        <p>Equilibrio entre sofisticación y confort.</p>
-      </div>
-      <div class="plan">
-        <h3>Premium</h3>
-        <p>$25 / mes</p>
-        <p>Lujo personalizado con piezas exclusivas.</p>
+  
+<main>
+  <section class="hero container" style="min-height:420px">
+    <div class="copy">
+      <h1>Moda que te entiende</h1>
+      <p>Asesoría personalizada que combina inteligencia artificial y sensibilidad humana. Recibe prendas seleccionadas para tu estilo y tu vida.</p>
+      <div class="cta">
+        <a class="btn primary" href="test.html">Hacer test de estilo</a>
+        <a class="btn" href="colecciones.html">Ver colecciones</a>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 SKIINBOX — Moda con propósito</p>
+  <section class="section container">
+    <h2 style="font-family:'Playfair Display',serif">Cómo funciona</h2>
+    <div class="grid" style="margin-top:18px">
+      <div class="card"><strong>Paso 1 — Test</strong><p>Completa tu perfil y preferencias.</p></div>
+      <div class="card"><strong>Paso 2 — Selección</strong><p>IA + estilista curan prendas para ti.</p></div>
+      <div class="card"><strong>Paso 3 — Recibe</strong><p>Pruébate en casa y elige lo que te quedas.</p></div>
+    </div>
+  </section>
+
+  <section id="planes" class="section container">
+    <h2 style="font-family:'Playfair Display',serif">Planes</h2>
+    <div class="grid" style="margin-top:18px">
+      <div class="card"><h3>Básico</h3><p><strong>$5</strong> / mes</p><p>Selección de prendas esenciales.</p><p><button class="subscribe-btn" data-plan="Básico" data-price="$5">Suscribirme</button></p></div>
+      <div class="card destacado"><h3>Estándar</h3><p><strong>$20</strong> / mes</p><p>Curaduría personalizada.</p><p><button class="subscribe-btn" data-plan="Estándar" data-price="$20">Suscribirme</button></p></div>
+      <div class="card"><h3>Premium</h3><p><strong>$25</strong> / mes</p><p>Acceso a marcas premium.</p><p><button class="subscribe-btn" data-plan="Premium" data-price="$25">Suscribirme</button></p></div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    © 2025 SKIINBOX — Moda con propósito · Todos los derechos reservados.
   </footer>
+  <div id="payModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);align-items:center;justify-content:center">
+    <div style="background:white;padding:20px;border-radius:10px;max-width:420px;width:90%">
+      <h3>Suscripción — <span class="plan-name"></span></h3>
+      <p>Precio: <strong class="plan-price"></strong> / mes</p>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+        <button id="payClose" style="padding:8px 12px;border-radius:6px">Cancelar</button>
+        <button id="payConfirm" style="padding:8px 12px;background:var(--ink);color:white;border-radius:6px">Pagar</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

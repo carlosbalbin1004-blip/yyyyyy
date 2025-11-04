@@ -1,15 +1,5 @@
-# SKIINBOX — Sitio Web (v2)
 
-Inspirado en la elegancia de Brunello Cucinelli.  
-Versión completa en HTML + CSS puro, lista para GitHub Pages.
+# SKIINBOX — Sitio estático v3
 
-## Estructura
-- Inicio
-- Visión
-- Misión
-- Historia
-- Colecciones
-- Contacto
-
-## Créditos
-© 2025 SKIINBOX — Moda con propósito.
+Versión completa con estructura: Inicio, Visión, Misión, Historia, Colecciones, Test de estilo y Contacto.
+Diseño inspirado en Brunello Cucinelli. Listo para subir a GitHub Pages.

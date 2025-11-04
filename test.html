@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>SKIINBOX — Visión</title>
+  <title>SKIINBOX — Test de estilo</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,8 +20,25 @@
   </header>
   
 <main class="section container">
-  <h2 style="font-family:'Playfair Display',serif">Visión</h2>
-  <p>Humanizar la moda del futuro: lujo consciente y tecnología con alma. Queremos transformar la industria para elegir mejor en lugar de tener más.</p>
+  <h2 style="font-family:'Playfair Display',serif">Test de estilo</h2>
+  <p>Responde estas preguntas para definir tu perfil. (Almacenado localmente para demo)</p>
+  <form id="styleForm" style="margin-top:12px;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;max-width:900px">
+    <input name="nombre" placeholder="Nombre completo" style="padding:10px;border-radius:6px;border:1px solid #ddd" required />
+    <select name="ocasiones" style="padding:10px;border-radius:6px;border:1px solid #ddd">
+      <option>Oficina</option><option>Casual</option><option>Eventos</option><option>Deportivo</option>
+    </select>
+    <input name="colores" placeholder="Colores preferidos" style="padding:10px;border-radius:6px;border:1px solid #ddd" />
+    <select name="prioridad" style="padding:10px;border-radius:6px;border:1px solid #ddd">
+      <option>Comodidad</option><option>Tendencia</option><option>Marca</option><option>Sostenibilidad</option>
+    </select>
+    <input name="presupuesto" placeholder="Presupuesto por prenda" style="padding:10px;border-radius:6px;border:1px solid #ddd" />
+    <input name="talla_arriba" placeholder="Talla - arriba" style="padding:10px;border-radius:6px;border:1px solid #ddd" />
+    <input name="talla_abajo" placeholder="Talla - abajo" style="padding:10px;border-radius:6px;border:1px solid #ddd" />
+    <div style="grid-column:1/-1">
+      <button type="submit" class="btn primary">Generar perfil</button>
+      <span id="status" style="margin-left:12px;color:green"></span>
+    </div>
+  </form>
 </main>
 
   <footer class="footer">

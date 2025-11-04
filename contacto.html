@@ -1,1 +1,48 @@
-<!DOCTYPE html><html lang='es'><head><meta charset='UTF-8'><link rel='stylesheet' href='css/style.css'><title>Contacto</title></head><body><header><a href='index.html' class='logo'>SKIINBOX</a></header><main><h2>Contacto</h2><p>¿Tienes dudas o deseas una asesoría de estilo? Escríbenos a <a href='mailto:info@skiinbox.com'>info@skiinbox.com</a></p></main><footer><p>© 2025 SKIINBOX</p></footer></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SKIINBOX — Contacto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="container">
+    <a class="logo" href="index.html"><span class="mark"></span><div class="mark" style="display:none"></div><div style="display:flex;flex-direction:column"><strong style="font-family:'Playfair Display',serif;color:#2f2f2f">SKIINBOX</strong><small style="color:var(--muted)">Moda por suscripción · Perú</small></div></a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="vision.html">Visión</a>
+      <a href="mision.html">Misión</a>
+      <a href="historia.html">Historia</a>
+      <a href="colecciones.html">Colecciones</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  
+<main class="section container">
+  <h2 style="font-family:'Playfair Display',serif">Contacto</h2>
+  <p>¿Necesitas asesoría o tienes una consulta? Escríbenos a <a href="mailto:info@skiinbox.com">info@skiinbox.com</a></p>
+  <form style="margin-top:12px;max-width:720px" onsubmit="event.preventDefault();alert('Formulario enviado (demo)');this.reset();">
+    <input placeholder="Nombre completo" style="width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-bottom:8px" required />
+    <input placeholder="Correo electrónico" style="width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-bottom:8px" required />
+    <textarea placeholder="Mensaje" style="width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-bottom:8px" rows="4"></textarea>
+    <button class="btn primary" type="submit">Enviar</button>
+  </form>
+</main>
+
+  <footer class="footer">
+    © 2025 SKIINBOX — Moda con propósito · Todos los derechos reservados.
+  </footer>
+  <div id="payModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);align-items:center;justify-content:center">
+    <div style="background:white;padding:20px;border-radius:10px;max-width:420px;width:90%">
+      <h3>Suscripción — <span class="plan-name"></span></h3>
+      <p>Precio: <strong class="plan-price"></strong> / mes</p>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+        <button id="payClose" style="padding:8px 12px;border-radius:6px">Cancelar</button>
+        <button id="payConfirm" style="padding:8px 12px;background:var(--ink);color:white;border-radius:6px">Pagar</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

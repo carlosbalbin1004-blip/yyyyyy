@@ -1,1 +1,46 @@
-<!DOCTYPE html><html lang='es'><head><meta charset='UTF-8'><link rel='stylesheet' href='css/style.css'><title>Colecciones</title></head><body><header><a href='index.html' class='logo'>SKIINBOX</a></header><main><h2>Colecciones</h2><p>Explora nuestras piezas seleccionadas con cuidado, inspiradas en la estética natural y el detalle humano.</p><div class='galeria'>[Imágenes aquí]</div></main><footer><p>© 2025 SKIINBOX</p></footer></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SKIINBOX — Colecciones</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="container">
+    <a class="logo" href="index.html"><span class="mark"></span><div class="mark" style="display:none"></div><div style="display:flex;flex-direction:column"><strong style="font-family:'Playfair Display',serif;color:#2f2f2f">SKIINBOX</strong><small style="color:var(--muted)">Moda por suscripción · Perú</small></div></a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="vision.html">Visión</a>
+      <a href="mision.html">Misión</a>
+      <a href="historia.html">Historia</a>
+      <a href="colecciones.html">Colecciones</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main class='section container'><h2 style="font-family:'Playfair Display',serif">Colecciones</h2><div class='gallery' style='margin-top:12px'>
+  <img src='assets/hero.jpg' alt='Colección' />
+  <img src='assets/how-1.jpg' alt='Colección' />
+  <img src='assets/lookbook-1.jpg' alt='Colección' />
+  <img src='assets/lookbook-2.jpg' alt='Colección' />
+  <img src='assets/lookbook-3.jpg' alt='Colección' />
+  <img src='assets/lookbook-4.jpg' alt='Colección' />
+  <img src='assets/lookbook-5.jpg' alt='Colección' />
+  <img src='assets/lookbook-6.jpg' alt='Colección' />
+</div></main>
+  <footer class="footer">
+    © 2025 SKIINBOX — Moda con propósito · Todos los derechos reservados.
+  </footer>
+  <div id="payModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);align-items:center;justify-content:center">
+    <div style="background:white;padding:20px;border-radius:10px;max-width:420px;width:90%">
+      <h3>Suscripción — <span class="plan-name"></span></h3>
+      <p>Precio: <strong class="plan-price"></strong> / mes</p>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+        <button id="payClose" style="padding:8px 12px;border-radius:6px">Cancelar</button>
+        <button id="payConfirm" style="padding:8px 12px;background:var(--ink);color:white;border-radius:6px">Pagar</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
